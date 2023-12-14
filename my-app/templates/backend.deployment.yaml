@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.backend.name }}
+spec:
+  replicas: {{ .Values.backend.replicas }}
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend
+    spec:
+      containers:
+      - name: backend
+        image: {{ .Values.backend.image }} # TO DO check values.yaml
+        ports:
+        - containerPort: {{ .Values.backend.servicePort }} # 8080
+        env:
+        - name: SPRING_POSTGRES_USERNAME
+          value: myapplication
+        - name: SPRING_POSTGRES_PASSWORD
+          value: M3P@ssw0rd!
+        - name: SPRING_POSTGRES_URL
+          value: jdbc:postgresql://my-db-test.io:5432/mydatabase # TO ADD 

@@ -1,0 +1,15 @@
+frontend:
+  name: frontend-deployment
+  image: registry/my-application/frontend:1.0
+  replicas: 2
+  servicePort: 80
+
+backend:
+  name: backend-deployment
+  image: registry/my-application/backend:1.0
+  replicas: 3
+  servicePort: 8080
+
+ingress:
+  enabled: true
+  host: myapp.com
