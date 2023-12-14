@@ -19,8 +19,8 @@ spec:
         - containerPort: {{ .Values.backend.servicePort }} # 8080
         env:
         - name: SPRING_POSTGRES_USERNAME
-          value: myapplication
+          value: avnadmin
         - name: SPRING_POSTGRES_PASSWORD
-          value: M3P@ssw0rd!
+          value: AVNS_fLGVxXhUXAZiW13mk5y
         - name: SPRING_POSTGRES_URL
-          value: jdbc:postgresql://my-db-test.io:5432/mydatabase # TO ADD 
+          value: jdbc:postgresql://pg-694830e-yy-7535.a.aivencloud.com:21195/defaultdb # TO ADD 
