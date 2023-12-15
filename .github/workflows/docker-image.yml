@@ -33,4 +33,4 @@ jobs:
         context: .
         file: ./dockerfiles/dockerfile
         push: true
-        tags: yylkhalidi/my-application-backend:1.0
+        tags: yylkhalidi/my-application-test:1.0
