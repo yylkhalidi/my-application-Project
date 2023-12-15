@@ -26,7 +26,7 @@ jobs:
     - name: Build and push backend
       uses: docker/build-push-action@v2
       with:
-        context: .
+        context: ./myapp-back
         file: ./myapp-back/Dockerfile
         push: true
         tags: yylkhalidi/my-application-backend:1.0
@@ -34,7 +34,7 @@ jobs:
     - name: Build and push frontend
       uses: docker/build-push-action@v2
       with:
-        context: .
+        context: ./myapp-front
         file: ./myapp-front/Dockerfile
         push: true
         tags: yylkhalidi/my-application-frontend:1.0
