@@ -23,4 +23,4 @@ spec:
         - name: SPRING_POSTGRES_PASSWORD
           value: M3P@ssw0rd!
         - name: SPRING_POSTGRES_URL
-          value: jdbc:postgresql://my-db-test.io:5432/mydatabase # TO ADD 
+          value: jdbc:postgresql://java_db:5432/mydbtest # TO ADD 
