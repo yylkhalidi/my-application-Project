@@ -1,0 +1,17 @@
+<form>
+  <mat-form-field>
+    <mat-label>Name</mat-label>
+    <input [(ngModel)]="user.name" matInput name="name">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Email</mat-label>
+    <input [(ngModel)]="user.email" matInput name="email">
+  </mat-form-field>
+
+  <!-- Save Button -->
+  <button (click)="saveUser()" color="primary" mat-raised-button>Save</button>
+
+  <!-- Cancel Button -->
+  <button [routerLink]="'/users'" color="accent" mat-raised-button>Cancel</button>
+</form>
