@@ -2,14 +2,9 @@ name: Docker Image CI
 
 on:
   push:
-    branches: [ "*" ]
-    paths:
-      - 'dockerfiles/**'
+    branches: [ "feat/dockerfiles" ]
   pull_request:
-    branches: [ "*" ]
-    paths:
-      - 'dockerfiles/**'
-
+    branches: [ "feat/dockerfiles" ]
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
