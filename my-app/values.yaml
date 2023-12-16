@@ -1,13 +1,13 @@
 frontend:
   name: frontend-deployment
   image: yylkhalidi/my-application-frontend:2.0
-  replicas: 1
+  replicas: 2
   servicePort: 80
 
 backend:
   name: backend-deployment
   image: yylkhalidi/my-application-backend:2.0
-  replicas: 1
+  replicas: 3
   servicePort: 8080
 
 ingress:
