@@ -3,5 +3,5 @@
 ### To Test 
 
 ```
-docker-compose up 
+docker-compose up --build 
 ```
