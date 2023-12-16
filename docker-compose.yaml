@@ -10,9 +10,9 @@ services:
     ports:
       - 8080:8080
     environment:
-      - SPRING_POSTGRES_URL=jdbc:postgresql://pg-694830e-yy-7535.a.aivencloud.com:21195/mydbtest
-      - SPRING_POSTGRES_USERNAME=avnadmin
-      - SPRING_POSTGRES_PASSWORD=AVNS_fLGVxXhUXAZiW13mk5y
+      - SPRING_POSTGRES_URL=jdbc:postgresql://java_db:5432/mydbtest
+      - SPRING_POSTGRES_USERNAME=myapplication
+      - SPRING_POSTGRES_PASSWORD=M3P@ssw0rd!
     depends_on:
       - java_db
 
