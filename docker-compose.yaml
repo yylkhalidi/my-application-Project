@@ -13,20 +13,20 @@ services:
       - SPRING_POSTGRES_URL=jdbc:postgresql://pg-694830e-yy-7535.a.aivencloud.com:21195/mydbtest
       - SPRING_POSTGRES_USERNAME=avnadmin
       - SPRING_POSTGRES_PASSWORD=AVNS_fLGVxXhUXAZiW13mk5y
-    # depends_on:
-    #   - java_db
+    depends_on:
+      - java_db
 
-  # java_db:
-  #   container_name: java_db
-  #   image: postgres:14-alpine
-  #   ports:
-  #     - 5432:5432
-  #   environment:
-  #     POSTGRES_USER: myapplication
-  #     POSTGRES_PASSWORD: M3P@ssw0rd!
-  #     POSTGRES_DB: mydbtest
-  #   volumes:
-  #     - pgdata:/var/lib/postgresql/data
+  java_db:
+    container_name: java_db
+    image: postgres:14-alpine
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: myapplication
+      POSTGRES_PASSWORD: M3P@ssw0rd!
+      POSTGRES_DB: mydbtest
+    volumes:
+      - pgdata:/var/lib/postgresql/data
 
   frontend:
     container_name: frontend
@@ -38,5 +38,5 @@ services:
       - "80:80"
     restart: always
 
-# volumes:
-#   pgdata: {}
+volumes:
+  pgdata: {}
