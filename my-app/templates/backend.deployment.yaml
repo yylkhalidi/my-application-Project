@@ -21,6 +21,7 @@ spec:
         - name: SPRING_POSTGRES_USERNAME
           value: myapplication
         - name: SPRING_POSTGRES_PASSWORD
-          value: M3P@ssw0rd!
+          value: AVNS_y5nmiqI6aGbqjLOCFe3
         - name: SPRING_POSTGRES_URL
-          value: jdbc:postgresql://java_db:5432/mydbtest # TO ADD 
+          value: jdbc:postgresql://pg-694830e-yy-7535.a.aivencloud.com:21195/mydbtest # TO ADD 
+          # jdbc:postgresql://[Host]:[Port]/[DatabaseName]
