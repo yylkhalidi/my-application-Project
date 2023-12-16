@@ -14,14 +14,14 @@ spec:
     spec:
       containers:
       - name: backend
-        image: {{ .Values.backend.image }} # TO DO check values.yaml
+        image: {{ .Values.backend.image }} 
         ports:
-        - containerPort: {{ .Values.backend.servicePort }} # 8080
+        - containerPort: {{ .Values.backend.servicePort }} 
         env:
         - name: SPRING_POSTGRES_USERNAME
           value: myapplication
         - name: SPRING_POSTGRES_PASSWORD
           value: AVNS_y5nmiqI6aGbqjLOCFe3
         - name: SPRING_POSTGRES_URL
-          value: jdbc:postgresql://pg-694830e-yy-7535.a.aivencloud.com:21195/mydbtest # TO ADD 
+          value: jdbc:postgresql://pg-694830e-yy-7535.a.aivencloud.com:21195/mydbtest
           # jdbc:postgresql://[Host]:[Port]/[DatabaseName]

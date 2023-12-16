@@ -12,4 +12,3 @@ backend:
 
 ingress:
   enabled: true
-  # host: myapp.com
