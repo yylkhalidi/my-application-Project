@@ -4,8 +4,7 @@ metadata:
   name: myapp-ingress
 spec:
   rules:
-  - host: {{ .Values.ingress.host }} # TO DO voir values.yaml
-    http:
+  - http:
       paths:
       - path: /frontend
         pathType: Prefix

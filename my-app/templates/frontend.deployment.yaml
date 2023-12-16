@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: {{ .Values.frontend.image }} # TO DO 
+        image: {{ .Values.frontend.image }}
         ports:
-        - containerPort: {{ .Values.frontend.servicePort }} # 80
+        - containerPort: {{ .Values.frontend.servicePort }}
