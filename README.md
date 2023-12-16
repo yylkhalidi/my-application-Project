@@ -1,6 +1,6 @@
 # my-application-Project
 
-### TO test 
+### To test 
 ```
 helm template my-app my-app
 ```
